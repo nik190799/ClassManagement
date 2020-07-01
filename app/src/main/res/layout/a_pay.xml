@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".APay" android:gravity="center" android:orientation="vertical"
+        android:background="@color/listBag">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:elevation="10dp"
+            android:layout_height="wrap_content" android:gravity="center"
+            android:background="@drawable/edit_homework_background">
+        <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Amount"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/admin_amount_et"
+                android:inputType="number"/>
+        <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/admin_upi_id"
+                android:hint="UPI ID"/>
+        <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="UPI Holder Name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/admin_name"
+        />
+        <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Note"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/admin_note"
+        />
+        <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_background"
+                android:textColor="#fff"
+                android:id="@+id/admin_send"
+                android:layout_marginTop="50dp"
+                android:text="pay" android:textStyle="bold" android:textSize="16sp" android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

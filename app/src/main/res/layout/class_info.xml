@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="#313131">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" app:srcCompat="@drawable/image_5"
+                    android:id="@+id/imageView12" android:layout_marginBottom="10dp"/>
+            <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="336dp">
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <TextView
+                    android:id="@+id/class_info_about_us_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_about_us_admin_teacher" android:layout_gravity="right"
+                    android:textStyle="bold" android:textColor="@android:color/holo_green_light"
+                    android:textSize="18sp" android:layout_margin="5dp" android:gravity="right"/>
+            <TextView
+                    android:text="Courses Offered:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView4" android:textSize="18sp"
+                    android:textStyle="bold" android:layout_margin="10dp"
+                    android:textColor="@android:color/background_light"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" app:srcCompat="@drawable/image_7"
+                    android:id="@+id/imageView8"/>
+            <TextView
+                    android:text="Program Details:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView7" android:textSize="18sp"
+                    android:textStyle="bold" android:layout_margin="10dp"
+                    android:textColor="@android:color/background_light"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp" app:srcCompat="@drawable/image_8"
+                    android:id="@+id/imageView9"/>
+            <TextView
+                    android:text="I. Two Year Day Boarding (Integrated) Classroom Program for IIT-JEE and Medical.(6 Days + 1 Day Test)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView42" android:layout_margin="8dp"
+                    android:textSize="12sp" android:textStyle="bold"
+                    android:textColor="@android:color/background_light"/>
+            <TextView
+                    android:text="About Test:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView43" android:textSize="12sp"
+                    android:layout_margin="5dp" android:textStyle="bold"
+                    android:textColor="@android:color/background_light"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp" app:srcCompat="@drawable/image_9"
+                    android:id="@+id/imageView10"/>
+            <TextView
+                    android:text="II. Two Years Integrated Classroom Program for JEE and NEET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView44" android:textSize="12sp"
+                    android:textStyle="bold" android:layout_margin="8dp"
+                    android:textColor="@android:color/background_light"/>
+            <TextView
+                    android:text="  Course will include comprehensive coverage of Board syllabus of Science and Mathematics subject in synchronized way and all those additional and relevant topics of higher level will also bethought at this stage to inculcate analytical skills, problems solving ability and better understanding of core-concepts required for JEE and various other competitive examinations (NTSE/JSTSE/Olympiad/KVPY etc.)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView48"
+                    android:textColor="@android:color/background_light" android:textSize="12sp"
+                    android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

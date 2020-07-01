@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".APay" android:gravity="center" android:orientation="vertical"
+        android:background="@color/listBag" android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:elevation="12dp"
+            android:layout_height="wrap_content" android:background="@drawable/edit_homework_background">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Amount"
+                    android:layout_marginLeft="45dp"
+                    android:id="@+id/amount_et"
+                    android:inputType="number" android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="17sp" android:textStyle="bold" android:layout_gravity="center"
+                    android:layout_weight="1" android:gravity="bottom"/>
+            <TextView
+                    android:text="/-  Rupees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView39" android:layout_weight="1"
+                    android:layout_gravity="center" android:textStyle="italic" android:textSize="16sp"/>
+        </LinearLayout>
+        <TextView
+                android:text="To:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView40" android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp" android:layout_marginLeft="15dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center">
+
+            <EditText
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Name of the Reciever"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            <EditText
+                    android:id="@+id/upi_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp"
+                    android:hint="UPI address of reciever"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+                android:text="From:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView41" android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" android:textStyle="bold" android:textSize="18sp"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layout_gravity="center">
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/profile_name_payment"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp" android:hint="Student Name" android:layout_gravity="center"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/profile_batch_payment"
+                    android:layout_marginTop="8dp" android:hint="PCM or PCB" android:textSize="16sp"
+                    android:layout_gravity="center"/>
+        </LinearLayout>
+        <!--<RadioGroup-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="horizontal" android:layout_marginTop="15dp" android:id="@+id/radio_grp">-->
+        <!--<RadioButton-->
+        <!--android:text="PCM"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" android:id="@+id/pcm_btn"-->
+        <!--android:layout_marginLeft="20dp"/>-->
+        <!--<RadioButton-->
+        <!--android:text="PCB"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" android:id="@+id/pcb_btn"-->
+        <!--android:layout_marginLeft="30dp"/>-->
+        <!--</RadioGroup>-->
+        <EditText
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:hint="Note"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/note"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused" android:textSize="16sp"
+                android:gravity="top"/>
+        <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_background"
+                android:textColor="#fff"
+                android:id="@+id/send"
+                android:layout_marginTop="20dp"
+                android:text="pay" android:textStyle="bold" android:textSize="16sp" android:layout_gravity="center"
+                android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

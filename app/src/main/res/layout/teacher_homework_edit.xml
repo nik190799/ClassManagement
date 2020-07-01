@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/constraintLayout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:orientation="vertical" android:gravity="center"
+              android:background="@color/listBag">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_margin="10dp">
+        <TextView
+                android:text="Select Class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView67" android:textSize="16sp"
+                android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light" android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+        <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="35dp" android:id="@+id/spinner_homework" android:scrollbarSize="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_margin="10dp">
+        <TextView
+                android:text="Edit Homework"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView68" android:textSize="16sp"
+                android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" android:gravity="center" android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" android:background="@drawable/edit_homework_background"
+            android:elevation="12dp" android:layout_margin="10dp">
+        <EditText
+                android:layout_height="wrap_content" android:id="@+id/teacher_name_text"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp" android:textSize="16sp" android:textStyle="bold"
+                android:hint="Teacher Name" android:layout_marginLeft="14dp" android:layout_marginRight="10dp"/>
+        <EditText
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/homework_edittext" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.488" app:layout_constraintVertical_bias="0.445"
+                android:hint="Add homework here..." android:gravity="top" android:padding="10dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_margin="10dp" android:gravity="center_horizontal">
+            <Button
+                    android:text="Add"
+                    android:layout_height="49dp"
+                    android:id="@+id/add_homework"
+                    app:layout_constraintTop_toBottomOf="@+id/homework_edittext"
+                    app:layout_constraintEnd_toEndOf="@+id/homework_edittext"
+                    android:layout_width="140dp"
+                    android:textSize="16sp" android:background="@drawable/btn_background"
+                    android:textColor="@android:color/background_light"
+                    android:layout_margin="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

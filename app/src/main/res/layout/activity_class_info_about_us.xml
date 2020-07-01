@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ClassInfoAboutUs" android:orientation="vertical" android:background="#313131">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp" app:srcCompat="@drawable/image_10"
+            android:id="@+id/imageView11"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="#313131">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <TextView
+                    android:text="   'JK Academy' is a tech oriented educational organization. We currently deliver science stream education to students of 8th, 9th, 10th, 11th and 12th Standards. We mainly focus on International Olympiads, IIT-JEE (Mains and Advanced), MHT-CET,AIIMS, NEET and other reputed Engineering and Medical Competitive exams at various centers in Maharashtra."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView45"
+                    android:textSize="16sp" android:layout_marginLeft="5dp" android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp" android:layout_marginBottom="5dp"
+                    android:textColor="@android:color/background_light" android:gravity="center"/>
+            <TextView
+                    android:text="   Our motto is to continuously Mentor, Inspire and Motivate students on their path of success. Education is often understood as a lifelong experience and we provide every facility and amenity, every kind of right opportunity, to ensure a rich and rewarding intellectual climate for the students to rise and shine in all his/her future endeavours under the one roof."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView46" android:layout_margin="5dp"
+                    android:textSize="16sp" android:textColor="@android:color/background_light"/>
+            <TextView
+                    android:text="   Our unflinching focus is on delivering not only for the bright students but also for students who are on cups of achievement and can produce results similar to their brighter counterparts if made to follow a structured,time tested regimen of learning, practice and revision, mentored, guided and motivated in the right direction."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView47" android:layout_margin="5dp"
+                    android:textSize="16sp" android:textColor="@android:color/background_light"/>
+            <TextView
+                    android:text="   Our training procedure is based on modern techniques and focused on current exam patterns. We have a team of experienced faculties. Advanced teaching methods and ultramodern facilities, which encourage all the students to perform better. JK Academy's aim is to provide quality education and laying strong foundation. For this purpose, School Board Exam preparations are carried here along with preparations of Engineering and Medical entrance exams."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView49" android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/holo_green_light" android:textSize="16sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

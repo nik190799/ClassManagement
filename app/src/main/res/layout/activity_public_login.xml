@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PublicLogin" android:orientation="vertical" android:background="@color/listBag">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:elevation="8dp"
+            android:layout_height="wrap_content" android:gravity="center"
+            android:background="@drawable/rounded_button_main_menu" android:layout_gravity="center"
+            android:layout_margin="13.5dp">
+        <ImageView
+                android:layout_width="180dp"
+                android:layout_height="50dp" app:srcCompat="@drawable/jklogo" android:id="@+id/imageView6"
+                android:layout_marginBottom="20dp" android:layout_marginTop="10dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+            <TextView
+                    android:text="Note:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView" android:textStyle="bold"
+                    android:textSize="16sp" android:layout_margin="10dp" android:layout_gravity="left"/>
+            <TextView
+                    android:text="All these details will be submitted to the Admin of the this class to contact you for the further details."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView6" android:layout_weight="1"
+                    android:layout_marginLeft="4dp" android:layout_marginRight="10dp"/>
+        </LinearLayout>
+        <EditText
+                android:layout_width="230dp"
+                android:layout_height="42dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/public_email"
+                android:hint="Email"
+                android:textColorHint="@android:color/darker_gray" android:textSize="15sp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                tools:layout_editor_absoluteX="78dp"
+                app:layout_constraintBottom_toTopOf="@+id/public_phone" android:layout_margin="5dp"/>
+        <EditText
+                android:layout_width="230dp"
+                android:layout_height="42dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/public_name"
+                android:hint="Enter Full Name"
+                android:textColorHint="@android:color/darker_gray"
+                android:selectAllOnFocus="true" android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/public_email"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.924" android:layout_margin="5dp"/>
+        <EditText
+                android:layout_width="230dp"
+                android:layout_height="42dp"
+                android:inputType=""
+                android:ems="10"
+                android:id="@+id/public_phone"
+                android:hint="Mobile Number"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15sp" android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                tools:layout_editor_absoluteY="373dp" tools:layout_editor_absoluteX="78dp" android:layout_margin="5dp"/>
+        <EditText
+                android:layout_width="230dp"
+                android:layout_height="84dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/public_address"
+                android:hint="Postal Address..."
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteY="435dp" tools:layout_editor_absoluteX="78dp" android:layout_margin="5dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"/>
+        <Button
+                android:text="Submit"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/public_login_btn"
+                android:background="@drawable/btn_background"
+                android:textColor="@android:color/background_light" android:textStyle="bold"
+                tools:layout_editor_absoluteY="590dp" tools:layout_editor_absoluteX="123dp"
+                android:layout_marginTop="30dp" android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+
+</LinearLayout>

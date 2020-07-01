@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.creedeon.creed003">
+
+    <uses-sdk tools:overrideLibrary="link.fls.swipestack"/>
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".AdminCircular"
+        android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".TShowTCircular"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".TShowHomework"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ChangePasswordT"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ChangePasswordA"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ClassInfoAboutUs"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".StudentAttendance"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".TeacherAdminCircular"
+                  android:screenOrientation="portrait"/>
+        <activity
+                android:name=".ClassInfo"
+                android:label="@string/title_activity_class_info"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ShowTeacherCirculars"
+                  android:screenOrientation="portrait"/>
+        <activity
+                android:name=".AdminStudentPassbook"
+                android:label="Passbook"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".ChangePassword"
+                android:label="Password"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".TeacherHomeworkEdit"
+                android:label="Homework"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".TPay"
+                android:label="Passbook"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".TeacherCircular"
+                android:label="Circular"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".ParentCircularHolder"
+                android:label="Circulars"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".ParentHomeworkHolder"
+                android:label="Homework"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".PUserHolder"
+                android:label="Public User"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".ParentPayment"
+                android:label="Payment"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".APay"
+                android:label="Payment"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".ShowHomework"
+                android:label="Homework"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".PublicLogin"
+                android:label="Public Login"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".AboutUs"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Profile"
+                android:label="@string/action_profile"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".UploaderActivity"
+                android:label="Uploads"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ShowCircular"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".SplashScreen"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".StudentLogin"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".TeacherLogin"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".AdminLogin"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".TeacherActivity"
+                android:label="JK Academy"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".ParentActivity"
+                android:label="JK Academy"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".AdminActivity"
+                android:label="JK Academy"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".MainActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".Attendance1"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name=".takeAttendance"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name=".teacher_attendanceSheet"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name=".student_attendance_sheet"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name=".notepad.NoteActivity"
+                android:label="Notepad"
+
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".notepad.EditNoteActivity"
+                android:label="Edit Note"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>

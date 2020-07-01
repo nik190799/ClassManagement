@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UploaderActivity" android:orientation="vertical"
+        android:gravity="center" android:background="@color/listBag">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="center"
+            android:background="@drawable/edit_homework_background"
+            android:elevation="12dp" android:layout_margin="12dp">
+        <TextView
+                android:text="Circular for Teachers and Students"
+                android:layout_width="wrap_content"
+                android:id="@+id/textView14"
+                android:textStyle="bold" android:layout_height="wrap_content" android:layout_marginBottom="15dp"
+                android:textSize="16sp" android:layout_marginTop="5dp"/>
+        <EditText
+                android:layout_width="297dp"
+                android:layout_height="124dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/uploader_name"
+                android:hint="Edit your Circular here..."
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorHint="@android:color/darker_gray"
+                android:gravity="top"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="center|center_horizontal|center_vertical">
+            <Button
+                    android:text="Choose file"
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/show_choser"
+                    android:layout_marginRight="28dp"
+                    android:background="@drawable/btn_background"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:layout_marginTop="15dp" android:layout_marginBottom="10dp"/>
+            <Button
+                    android:text="Upload"
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bt"
+                    android:background="@drawable/btn_background"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginTop="15dp" android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="center"
+            android:background="@drawable/edit_homework_background"
+            android:elevation="12dp" android:layout_margin="12dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView16"
+
+                android:text="Circular for Teachers only" android:textStyle="bold" android:layout_marginBottom="15dp"
+                android:textSize="16sp" android:layout_marginTop="5dp"/>
+        <EditText
+                android:layout_width="297dp"
+                android:layout_height="124dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/teacher_admin_circular_edit_text"
+                android:hint="Edit Circular here for teachers"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorHint="@android:color/darker_gray"
+
+                android:gravity="top"/>
+        <Button
+                android:text="Upload"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/teacher_admin_circular_upload_bt"
+                android:background="@drawable/btn_background" android:textColor="@android:color/background_light"
+
+                android:layout_marginTop="15dp" android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

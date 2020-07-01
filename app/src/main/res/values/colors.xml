@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E40313</color>
+    <color name="colorPrimaryDark">#a70b07</color>
+    <color name="colorAccent">#4CAF50</color>
+    <color name="colorOrdinary">#1e4756</color>
+    <color name="colourHead">#001933</color>
+    <color name="listBag">#D3D3D3</color>
+    <color name="btnColour">#e40313</color>
+    <color name="cardback">#FFDF2330</color>
+
+    <color name="view_backg_color">#c7c7C7</color>
+
+    <color name="colorPrimary_dark">#212121</color>
+    <color name="colorAccent_dark" >#FF9800</color>
+    <color name="colorPrimaryDark_dark" >#DE000000</color>
+
+</resources>
